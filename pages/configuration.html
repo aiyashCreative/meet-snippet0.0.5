@@ -1,0 +1,23 @@
+<div id="join-screen">
+  <button id="joinBtn" onclick="meetingObj.joinMeeting()">Join Meeting</button>
+</div>
+
+<!-- for Managing meeting status -->
+<div id="textDiv"></div>
+
+<div id="grid-screen" style="display: none">
+  <!-- To Display MeetingId -->
+  <h3 id="meetingIdHeading"></h3>
+
+  <!-- Controllers -->
+  <button id="leaveBtn" onclick="meetingObj.leaveMeeting()">Leave</button>
+  <button id="toggleMicBtn" onclick="meetingObj.toggle.mic()">
+    Toggle Mic
+  </button>
+  <button id="toggleWebCamBtn" onclick="meetingObj.toggle.webCam()">
+    Toggle WebCam
+  </button>
+
+  <!-- render Video -->
+  <div class="row" id="videoContainer"></div>
+</div>
